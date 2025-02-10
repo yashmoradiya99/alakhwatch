@@ -63,9 +63,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Current Image:</p>
         <img id="currentImage" src="./images/<?php echo $product['image']; ?>" alt="Current Image" width="200">
 
-        <button type="submit">Update Product</button>
+        <label for="image">Product Image:</label>
+    <div class="image-wrapper">
+    <button type="button" id="adjustImageBtn" class="adjust-btn">✂️ Adjust</button>
+    </div>
+
+        <button type="submit" >Update</button>
         <button type="button" onclick="window.location.href='index.php';" class="back-btn">Back to Home</button>
-        <button type="button" id="adjustImageBtn">Update Image</button>
+        
     </form>
 </div>
 
@@ -176,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 </script>
 
 </body>

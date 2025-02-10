@@ -27,7 +27,7 @@ $result = $conn->query($sql);
             <div class="product">
                 <img src="./images/<?php echo $row['image']; ?>" alt="<?php echo $row['name']; ?>">
                 <h3><?php echo $row['name']; ?></h3>
-                <p class="price">$<?php echo $row['price']; ?></p>
+                <p class="price">₹ <?php echo $row['price']; ?></p>
                 <p><?php echo $row['description']; ?></p>
                 <a 
                     href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20the%20product:%20<?php echo urlencode($row['name']); ?>" 

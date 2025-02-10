@@ -201,4 +201,64 @@ table th {
         width: 100%;  /* Full-width buttons for mobile */
         font-size: 16px;
     }
+
+    .image-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .product-image {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .adjustImageBtn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #ffcc00;
+        color: rgb(212, 31, 31);
+        padding: 5px 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.small-btn {
+    font-size: 12px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.danger-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.small-btn:hover {
+    opacity: 0.8;
+}
+
+    
+    .adjust-btn:hover {
+        background-color: #e6b800;
+    }
+    
+
 }
